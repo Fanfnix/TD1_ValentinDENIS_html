@@ -77,6 +77,8 @@ main {
         align-items: center;
         justify-content: space-between;
         background-color: #e4dce2;
+        font-family: "Open Sans";
+        font-weight: bold;
         
         #container {
             display: flex;
@@ -91,6 +93,7 @@ main {
 
             &:hover {
                 background-color: #6a3460;
+                color: white;
             }
         }
 
@@ -135,10 +138,10 @@ footer {
     height: 500px;
 
     img {
-        height: 0px;
+        height: 500px;
         transition: 3s ease-in-out;
 
-        &:focus {
+        &:focus-within {
             height: 500px;
             transform: rotate(360deg);
         }
