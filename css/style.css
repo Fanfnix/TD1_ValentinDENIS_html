@@ -29,5 +29,118 @@ header {
         gap: 10px;
         font-size: 40px;
         color: white;
+        
+        i:hover {
+            color: black;
+        }
+    }
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #hero {
+        background: url(../Images/santorini.jpeg);
+        background-size: auto;
+        padding-block: 20em;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-family: "Oleo Script", system-ui;
+            font-size: 40px;
+            text-align: center;
+            background-color: #6a3460;
+            padding: 5px;
+            color: white;
+            width: 25%;
+        }
+    }
+
+    #choix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e4dce2;
+        
+        #container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        figure {
+            padding: 10px;
+            transition: 0.1s ease-in-out;
+
+            &:hover {
+                background-color: #6a3460;
+            }
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    #cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: url(../Images/holiday.jpeg);
+        background-attachment: fixed;
+        padding-block: 100px;
+
+        button {
+            background-color: #6a3460;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+                background-color: white;
+                border-color: #6a3460;
+                color: #6a3460;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #6a3460;
+    padding-block: 20px;
+    height: 500px;
+
+    img {
+        height: 0px;
+        transition: 3s ease-in-out;
+
+        &:focus {
+            height: 500px;
+            transform: rotate(360deg);
+        }
     }
 }
