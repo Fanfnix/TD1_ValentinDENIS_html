@@ -10,3 +10,24 @@
     font-style: normal;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6a3460;
+    padding-inline: 50px;
+
+    img {
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 40px;
+        color: white;
+    }
+}
